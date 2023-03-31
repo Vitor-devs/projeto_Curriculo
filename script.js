@@ -12,5 +12,9 @@ function entrevistar() {
   document.getElementById("nao-responder").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("entrevista").style.display = "none";
+
+
   });
-  
+
+
+window.alert("oi meu lindo")
