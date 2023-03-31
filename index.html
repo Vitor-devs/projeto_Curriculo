@@ -18,26 +18,26 @@
             <fieldset>
                 <legend><b>Seja bem-vindo</b></legend>
                 <div class="inputBox">
-                    <p>Você é um tech ou recrutador ?</p>
-                    <input type="radio" id="tech" class="inputUser" name="opcao" value="tech">
-                    <label for="tech">Tech</label>
+                    <p>Você é um tech recruiter ?</p>
+                    <input type="radio" name="tech" class="inputUser" id="inputSim" value="tech">
+                    <label for="tech">Sim</label>
 
-                    <input type="radio" id="recrutador" name="opcao" value="recrutador" onchange="entrevistar()">
-                    <label for="recrutador">Recrutador</label>
+                    <input type="radio" name="tech" id="inputNao" value="recrutador">
+                    <label for="recrutador">Não</label>
 
                 </div>
 
-                <div id="entrevista" style="display: none;">
+                <div id="entrevista">
                     <label for="empresa">Qual é a sua empresa?</label>
-                    <input type="text" id="empresa" class="inputUser" name="empresa" value="empresa">
+                    <input type="text" id="empresa" class="inputUser" name="empresa">
                     <br>
 
                     <label for="local">De onde você é?</label>
-                    <input type="text" id="local" class="inputUser" name="local" value="local">
+                    <input type="text" id="local" class="inputUser" name="local">
 
                     <input type="submit" name="submit" id="submit">
-                    <p><a href="#" id="nao-responder">Não desejo responder</a></p>
                 </div>
+                <p><a href="#" id="nao-responder">Não desejo responder</a></p>
 
             </fieldset>
 

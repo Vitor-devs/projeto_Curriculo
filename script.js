@@ -1,20 +1,19 @@
-function entrevistar() {
-    var entrevista = document.getElementById("entrevista");
-    var recrutador=document.getElementById("recrutador")
-    if (recrutador.checked) {
-      entrevista.style.display = "block";
-      window.scrollTo(0, 0);
-    } else {
-      entrevista.style.display = "none";
-    }
+const inputSim = document.getElementById("inputSim");
+const inputNao = document.getElementById("inputNao");
+const entrevista = document.getElementById("entrevista");
+
+inputSim.addEventListener("change", function() {
+  if (this.checked) {
+    entrevista.style.display = "block";
+  } else {
+    entrevista.style.display = "none";
   }
-  
-  document.getElementById("nao-responder").addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("entrevista").style.display = "none";
+});
 
-
-  });
-
-
-window.alert("oi meu lindo")
+inputNao.addEventListener("change", function() {
+  if (this.checked) {
+    entrevista.style.display = "none";
+  } else {
+    entrevista.style.display = "block";
+  }
+});
