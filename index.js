@@ -24,6 +24,10 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/home.html', (req, res)=>{
+  res.sendFile(__dirname + '/home.html')
+})
+
 app.post('/salvarFormulario', (req, res)=>{
     const nome = req.body.nome 
     const empresa = req.body.empresa
@@ -43,6 +47,5 @@ app.post('/salvarFormulario', (req, res)=>{
         })
     
 })
-
 
 app.listen(3000)
