@@ -23,7 +23,7 @@
                 <div class="inputBox">
                     <p>Você é um tech recruiter ?</p>
                     <div id="inputs">
-                        <input type="radio" name="tech" class="inputUser" id="inputSim" value="tech">
+                        <input type="radio" name="tech" class="inputUser" id="inputSim" value="tech" onclick=mostrarEntrevista()>
                         <label for="tech">Sim</label>
                         <br>
                         <input type="radio" name="tech" id="inputNao" value="recrutador">
@@ -32,7 +32,7 @@
 
                 </div>
 
-                <div id="entrevista">
+                <div id="entrevista" style="display : none;">
                     <label for="empresa">Qual seu nome?</label>
                     <input type="text" id="empresa" class="inputUser" name="nome" placeholder="Digite seu nome">
                     <br>
@@ -50,7 +50,18 @@
 
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        function mostrarEntrevista() {
+            var entrevista = document.getElementById("entrevista"); //aparecer a entrevista quando apertar em SIM
+            if (entrevista.style.display === "none") {
+                entrevista.style.display = "block";
+            }
+        }
+    
+        document.getElementById("inputNao").addEventListener("click", function() { //quando apertar em NAO vai direto pro curriculo
+            window.location.href = "/home.html";
+        });
+    </script>
 
 
 </body>
