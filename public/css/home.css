@@ -1,116 +1,54 @@
-html, body {
-    overflow: hidden;
-}
-
 * {
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
-  }
-  
-
-@media all and (max-width: 480px) {
-    body{
-        width: 100vw;
-        height: 100vh;
-        background: url("../imagens/homeBackgroundP.jpg") no-repeat;
-        background-size: cover;
-    }
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-@media all and (min-width: 480px) and (max-width: 768px)  {
-    body{
-        width: 100vw;
-        height: 100vh;
-        background: url("../imagens/homeBackgroundP.jpg") no-repeat center top ;
-        background-size: cover;
-    }
+body {
+  background-image: url("../imagens/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    body{
-        width: 100vw;
-        height: 100vh;
-        background-image: url("../imagens/homeBackgroundM.jpg");
-        background-size: cover;   
-    }
-
+h3 {
+  display: flex;
+  justify-content: center;
+}
+#titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  color: white;
 }
 
-@media all and (min-width: 1024px) and (max-width: 2168px) {
-    body{
-        width: 100vw;
-        height: 100vh;
-        background-image: url("../imagens/homeBackgroundG.jpg");
-        background-size: cover;
-    }
+#explicacao {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+
+
+  max-height: 70%;
+  border-radius: 1rem;
 }
 
-.entrada {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(20, 17, 17, 0.8);
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    width: 60vw;
-
-    
+#container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  height: 100vh;
 }
 
-#inputs{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
+#info {
+  font-size: 1.2rem;
 
-}
-#entrevista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
+  color: white;
 }
 
-#entrevista > input {
-    width: 50%;
-    border-radius: 8px;
+.item {
+  font-size: 1.1rem;
+  color: white;
 }
 
-
-#entrevista > #submit {
-    color: rgba(216, 213, 213, 0.774);
-    margin-top: 1rem;
-    background-image: linear-gradient(to right, rgb(19, 17, 17), rgb(79, 21, 90));
-    width: 30%;
-    height: 3rem;
-    border-radius: 3rem;
-}
-
-#empresa, #local{
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.inputBox > p {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-a{
-    color:rgb(87, 30, 74);
-}
-
-fieldset {
-    border: 3px solid rgb(247, 0, 255);
-    width: 100%;
-}
-
-legend {
-    border: 1px solid rgb(102, 47, 99);
-    padding: 5px;
-    text-align: center;
-    background-color: rgb(133, 56, 136);
+a {
+  color: rgba(255, 255, 0, 0.623);
 }
